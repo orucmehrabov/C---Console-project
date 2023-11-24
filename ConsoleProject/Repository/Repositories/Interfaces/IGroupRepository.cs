@@ -1,4 +1,4 @@
-﻿using Domain.Common;
+﻿using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories.Interfaces
 {
-    public interface IBaseRepository<T> where T : BaseEntity
+    public interface IGroupRepository
     {
+        Group GetById(int groupId);
+        Group GetByName(string name);
+        void Add(Group group);
     }
 }

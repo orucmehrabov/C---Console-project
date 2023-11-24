@@ -1,4 +1,4 @@
-﻿using Domain.Common;
+﻿using Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Repositories.Interfaces
 {
-    public interface IBaseRepository<T> where T : BaseEntity
+    public interface IUserRepository
     {
+        User GetById(int userId);
+        User GetByEmail(string email);
+        void Add(User user);
     }
 }

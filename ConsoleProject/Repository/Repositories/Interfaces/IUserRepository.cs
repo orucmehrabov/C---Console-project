@@ -9,8 +9,7 @@ namespace Repository.Repositories.Interfaces
 {
     public interface IUserRepository
     {
-        User GetById(int userId);
-        User GetByEmail(string email);
-        void Add(User user);
+        void Register(User user);
+        User Login(string email, string password);
     }
 }

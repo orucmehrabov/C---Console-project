@@ -9,8 +9,12 @@ namespace Repository.Repositories.Interfaces
 {
     public interface IGroupRepository
     {
+        void Create(Group group);
+        void Delete(int groupId);
+        void Edit(Group group);
         Group GetById(int groupId);
-        Group GetByName(string name);
-        void Add(Group group);
+        List<Group> GetAll();
+        List<Group> SearchByName(string name);
+        List<Group> SortByCapacity();
     }
 }

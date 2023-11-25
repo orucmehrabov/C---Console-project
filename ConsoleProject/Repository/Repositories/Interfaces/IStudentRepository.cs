@@ -9,8 +9,12 @@ namespace Repository.Repositories.Interfaces
 {
     public interface IStudentRepository
     {
+        void Create(Student student);
+        void Delete(int studentId);
+        void Edit(Student student);
         Student GetById(int studentId);
-        void Add(Student student);
-        void Update(Student student);
+        List<Student> GetAll();
+        List<Student> SearchByName(string name);
+        List<Student> SortByAge();
     }
 }

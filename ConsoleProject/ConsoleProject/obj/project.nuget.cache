@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "Anz4NXIbZ5vt0cQtTD89ruvby/Xu8/rlhi1M5ElUBb0PVPt7N5aw9w4VQ+u2Cill/n7pU4AI+Zr096Z6xxfCQw==",
-  "success": true,
+  "dgSpecHash": "cHStTaYz066M+K10gfoeB/xVQAP9ZHGserEgXte9amvhaAyJyNGDvRoLcVpdWP9nueOiXUDV79KQQU1RybXTlA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\oruc-\\OneDrive\\Masaüstü\\Console Project\\ConsoleProject\\ConsoleProject\\ConsoleProject.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Services is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project Services supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "Services",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -10,7 +10,22 @@ namespace Repository.Repositories
 {
     public class StudentRepository : IStudentRepository
     {
-        public void Add(Student student)
+        public void Create(Student student)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int studentId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit(Student student)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Student> GetAll()
         {
             throw new NotImplementedException();
         }
@@ -20,9 +35,13 @@ namespace Repository.Repositories
             throw new NotImplementedException();
         }
 
-        public void Update(Student student)
+        public List<Student> SearchByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Student> SortByAge()
         {
             throw new NotImplementedException();
         }
     }
-}

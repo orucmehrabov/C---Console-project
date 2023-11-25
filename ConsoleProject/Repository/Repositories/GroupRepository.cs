@@ -10,7 +10,22 @@ namespace Repository.Repositories
 {
     public class GroupRepository : IGroupRepository
     {
-        public void Add(Group group)
+        public void Create(Group group)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int groupId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Edit(Group group)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Group> GetAll()
         {
             throw new NotImplementedException();
         }
@@ -20,7 +35,12 @@ namespace Repository.Repositories
             throw new NotImplementedException();
         }
 
-        public Group GetByName(string name)
+        public List<Group> SearchByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Group> SortByCapacity()
         {
             throw new NotImplementedException();
         }

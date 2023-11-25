@@ -14,7 +14,9 @@ namespace Repository.Repositories.Interfaces
         void Edit(Group group);
         Group GetById(int groupId);
         List<Group> GetAll();
-        List<Group> SearchByName(string name);
-        List<Group> SortByCapacity();
+        List<Group> Search(string groupName);
+        List<Group> SortingByCapacity();
+        void Edit(System.Text.RegularExpressions.Group group);
+        void Create(System.Text.RegularExpressions.Group group);
     }
 }

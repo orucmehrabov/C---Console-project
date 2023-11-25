@@ -4,7 +4,7 @@ using Services.Services.Interfaces;
 
 namespace Services.Services
 {
-    public class UserService : IUserService
+    public class UserService
     {
         private readonly IUserRepository _userRepository;
 
@@ -15,14 +15,14 @@ namespace Services.Services
 
         public void Register(User user)
         {
-            // Register logic
+            // Qeydiyyat əməliyyatını icra et
+            _userRepository.Register(user);
         }
 
         public User Login(string email, string password)
         {
-            // Login logic
-            return null;
+            // Giriş əməliyyatını icra et
+            return _userRepository.Login(email, password);
         }
     }
-
 }

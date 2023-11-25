@@ -35,13 +35,19 @@ namespace Repository.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Student> SearchByName(string name)
+        public List<Student> SearchByName(string studentName)
         {
             throw new NotImplementedException();
         }
 
-        public List<Student> SortByAge()
+        public List<Student> SearchBySurname(string studentSurname)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Student> SortingByAge()
         {
             throw new NotImplementedException();
         }
     }
+}

@@ -1,15 +1,9 @@
 ﻿using Repository.Repositories.Interfaces;
-using Services.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Services.Services
 {
-    public class GroupService : IGroupService
+    public class GroupService
     {
         private readonly IGroupRepository _groupRepository;
 
@@ -20,41 +14,44 @@ namespace Services.Services
 
         public void Create(Group group)
         {
-            // Create logic
+            // Qrup yaratma əməliyyatını icra et
+            _groupRepository.Create(group);
         }
 
         public void Delete(int groupId)
         {
-            // Delete logic
+            // Qrup silmə əməliyyatını icra et
+            _groupRepository.Delete(groupId);
         }
 
         public void Edit(Group group)
         {
-            // Edit logic
+            // Qrupu düzəltmə əməliyyatını icra et
+            _groupRepository.Edit(group);
         }
 
         public Group GetById(int groupId)
         {
-            // Get by Id logic
-            return null;
+            // Qrupu ID-ə görə əldə et
+            return _groupRepository.GetById(groupId);
         }
 
         public List<Group> GetAll()
         {
-            // Get all logic
-            return null;
+            // Bütün qrupları əldə et
+            return _groupRepository.GetAll();
         }
 
-        public List<Group> SearchByName(string name)
+        public List<Group> Search(string groupName)
         {
-            // Search by name logic
-            return null;
+            // Adına görə qrupları axtar
+            return _groupRepository.Search(groupName);
         }
 
-        public List<Group> SortByCapacity()
+        public List<Group> SortingByCapacity()
         {
-            // Sort by capacity logic
-            return null;
+            // Capacity-yə görə qrupları sırala
+            return _groupRepository.SortingByCapacity();
         }
     }
 }

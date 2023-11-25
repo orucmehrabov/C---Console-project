@@ -14,7 +14,8 @@ namespace Repository.Repositories.Interfaces
         void Edit(Student student);
         Student GetById(int studentId);
         List<Student> GetAll();
-        List<Student> SearchByName(string name);
-        List<Student> SortByAge();
+        List<Student> SearchByName(string studentName);
+        List<Student> SearchBySurname(string studentSurname);
+        List<Student> SortingByAge();
     }
 }
